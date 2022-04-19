@@ -1,6 +1,9 @@
 import numpy as np
 import Config
 
+# The function below was written by StackOverflow user Ron and is licensed
+# under CC BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/ ).
+# https://stackoverflow.com/a/67169999
 def count_consecutive(arr, n):
     # pad a with False at both sides for edge cases when array starts or ends with n
     d = np.diff(np.concatenate(([False], arr == n, [False])).astype(int))

@@ -74,12 +74,12 @@ def move(column): #places piece in column
 
             state = check.check(board,i,column)
             if state == 1:
-                print("Player 1 Wins.")
+                print("Player Wins.")
                 displayWinner.config(text="Winner: Player")
                 inputStatus(False)
                 setEndStatus(False)
             elif state == 2:
-                print("Player 2 Wins.")
+                print("Computer Wins.")
                 displayWinner.config(text="Winner: Computer")
                 inputStatus(False)
                 setEndStatus(False)
@@ -164,7 +164,3 @@ def main():
     root.protocol("WM_DELETE_WINDOW", on_closing)
     ready = True
     root.mainloop()
-
-
-# if __name__ == "__main__":
-#     main()
