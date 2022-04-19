@@ -1,2 +1,2 @@
-# ConnectFour-Game
- Playable ConnectFour game against simple minimax AI.
+# ConnectFour
+Playable Connect Four game against simple (somewhat) minimax AI.
